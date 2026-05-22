@@ -227,8 +227,8 @@ h3 {
 
 p {
   color:#000;
-  font-family: "Lobster Two", sans-serif;
-  font-size: 24px !important;
+  font-family: "Permanent Marker", cursive;
+  font-size: 22px !important;
 }
 
 p.disclaimer {font-size:16px !important;}
@@ -690,6 +690,7 @@ section:last-of-type p {
 }
 
 .gif-list li {
+  color: #222;
   position: relative;
   padding-left: 52px;
   min-height: 40px;
@@ -698,16 +699,56 @@ section:last-of-type p {
   align-items: center;
 }
 
+.gif-list li strong {
+  color: var(--hot-pink);
+}
+
 .gif-list li::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
-  width: 34px;
+  width: 39px;
   height: 40px;
   transform: translateY(-50%);
 
-  background-image: url("arrow-head-right.gif");
+  background-image: url("neon-green-arrow.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.icon-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.icon-list li {
+  color: #222;
+  position: relative;
+  padding-left: 52px;
+  min-height: 40px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-list li strong {
+  color: var(--hot-pink);
+}
+
+.icon-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 39px;
+  height: 40px;
+  transform: translateY(-50%);
+
+  background-image: url("hot-pink-arrow.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
