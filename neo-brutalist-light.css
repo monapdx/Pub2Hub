@@ -227,11 +227,12 @@ h3 {
 
 p {
   color:#000;
-  font-family: "Permanent Marker", cursive;
-  font-size: 22px !important;
+  
 }
 
-p.disclaimer {font-size:13px !important;}
+p.point {font-family: "Mozilla Text", sans-serif;font-size:16px !important;padding-left: 52px;}
+
+p.disclaimer {font-family: "Mozilla Text", sans-serif;font-size:13px !important;}
 
 .hero-lead {
   max-width: 860px;
@@ -302,6 +303,8 @@ ol {
 }
 
 li {
+  font-family: "Permanent Marker", cursive;
+  font-size: 22px !important;
   margin: 0.65rem 0;
   color: #25252c;
 }
