@@ -297,6 +297,29 @@ section {
   border-bottom: var(--border);
 }
 
+.panel.ebook-panel::after {
+  content: "";
+
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  width: 120px;
+  height: 120px;
+
+  background-image: url("doodle-color-95-ebook-reader-hover-pinch.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  filter:
+    drop-shadow(4px 4px 0 #ff45bd)
+    drop-shadow(8px 8px 0 #b8ff24);
+
+  pointer-events: none;
+}
+
+
+
 ul,
 ol {
   margin: 1rem 0;
@@ -788,4 +811,35 @@ section:last-of-type p {
   background: rgba(255, 69, 189, 0.12);
 
   pointer-events: none;
+}
+
+/* Add this at the very bottom of your CSS */
+
+.panel-hearts {
+  position: relative;
+  overflow: hidden;
+}
+
+.panel-hearts::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 18px;
+
+  width: 115px;
+  height: 115px;
+
+  background-image: url("garland.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.panel-hearts > * {
+  position: relative;
+  z-index: 1;
 }
